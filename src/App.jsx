@@ -1,18 +1,19 @@
 import { useState } from 'react'
 import Card from './components/Card'
 import './App.css'
+import List from './components/List'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1 className="bg-green-400 p-4 text-center">Hello</h1>
-      <div className="flex">
-        <Card name={"Lenz"} jobtitle={"AV"} description={"tseawass"}/>
-        <Card name={"Riedmann"} jobtitle={"SP"} description={"heile"}/>
+      <h1 >Liste</h1>
+      <div >
+        <List item={"Coffee"}></List>
+        <List item={"Tea"}></List>
+        <List item={"Butter"}></List>
       </div>
-      test
     </>
   )
 }

@@ -1,31 +1,13 @@
 import { useState } from 'react'
-import Card from './components/Card'
-import './App.css'
-import List from './components/List'
-import Button from './components/Button'
+import Excercise1 from './components/pages/Excercise1'
+import Excercise2 from './components/pages/Excercise2'
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1 >Liste</h1>
-      <div className="flex flex-col gap-0.5" >
-        <List item={"Coffee"}></List>
-        <List item={"Tea"}></List>
-        <List item={"Butter"}></List>
-      </div>
-
-      <h1 className="mt-40">Button-Count: {count}</h1>
-      <div className="">
-        <Button  element={"Sendar"} count={count} setCount={setCount} ></Button>
-      </div>
-
-      <h1 className="mt-40">Card</h1>
-      <div className="flex flex-col gap-4">
-        <Card image={"/./public/John-Doe.png"} name={"John Doe"} jobtitle={"Architect & Engineer"}></Card>
-      </div>
-      
+      <Excercise2></Excercise2>
     </>
   )
 }

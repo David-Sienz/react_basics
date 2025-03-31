@@ -2,7 +2,7 @@ import React, { useState } from "react";
  
 type Props = { name: string; description: string} ;
  
-export default function Card ({ name, description}: Props) {
+export default function User ({ name, description}: Props) {
     const [amountOfClick, setAmountOfClick] = useState(0);
     let hello = "Hello " + name + "!";
     let style = amountOfClick > 5 ? "bg-green-400" : "";

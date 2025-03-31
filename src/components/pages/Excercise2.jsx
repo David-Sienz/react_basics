@@ -6,7 +6,8 @@ export default function Excercise2() {
   return (
     <>
       <User name="Dragan" description="Schueler"></User>
-      <User name="Max" description="Schueler"></User>
+      <User name="Damien" description="Schueler"></User>
+      <User name="Simon" description="Schueler"></User>
     </>
   )
 }

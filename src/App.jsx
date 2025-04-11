@@ -1,11 +1,11 @@
 import React from 'react';
-import Excercise_DempProject_Cards_Daten from './components/pages/Excercise_DemoProject_Cards_Daten'
+import Ecvervise_DemoProject_Cards_Daten from './components/pages/Excercise_DemoProject_Cards_Daten.jsx';
 
 function App() {
 
   return (
     <>
-      <Excercise_DempProject_Cards_Daten></Excercise_DempProject_Cards_Daten>
+    <Ecvervise_DemoProject_Cards_Daten />
     </>
   )
 }

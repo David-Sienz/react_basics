@@ -23,20 +23,17 @@ export default function PeopleContainer() {
   }, [searchTerm, people]);
 
   return (
-    <div>
-      <div>
-        <h1>People</h1>
-        <div className="border">
+    <div className="">
+      <div className="fixed border mb-4 bg-white w-full h-28 p-8">
           <input
-            className="border p-4"
+            className="border p-4 bg-white"
             placeholder="Search"
-            type="text"
+            type="text" 
             onChange={(el) => setSearchTerm(el.target.value)}
           />
-        </div>
       </div>
       <div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 pt-32">
           {filteredPeople.map((person) => (
             <CardPeople
               key={person.id}

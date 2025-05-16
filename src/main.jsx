@@ -1,23 +1,26 @@
-import { createBrowserRouter, RouterProvider } from "react-router";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router";
+
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Excercise_Router from "./components/pages/Excercise_Router";
+import Page1 from "./components/pages/Page1";
+import Page2 from "./components/pages/Page2";
 
-const router = createBrowserRouter( [
-{
-path: "/",
-element: <Page1 />,
-},
-{
-  path: "/p2",
-  element: <Page2 />,
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Page1 />,
   },
-{
-  path: "/super",
-  element: <Excercise_Router />,
+  {
+    path: "/p2",
+    element: <Page2 />,
   },
 ]);
- 
+
 const root = document.getElementById("root");
- 
-ReactDOM. createRoot(root). render(<RouterProvider router={router} />);
+
+ReactDOM.createRoot(root).render(
+  <RouterProvider router={router} />
+);
